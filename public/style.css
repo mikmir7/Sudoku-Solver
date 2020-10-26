@@ -1,18 +1,24 @@
 code {
-  background: #d0d0d5;
+  background: #8181e9;
 }
 
 .container {
   display: flex;
   flex-direction: column;
+ 
+  
 }
 
 .form-container {
   max-width: 95%;
+  color: grey;
+  
 }
 
 textarea {
   width: 100%;
+  
+  
 }
 
 #user-stories {
@@ -46,6 +52,7 @@ input[type="text"] {
   width: 2em;
   height: 2em;
   text-align: center;
+  color: grey;
 }
 
 .C1, .C2, .C3, .C4, .C5, .C6, .C7, .C8, .C9, .F1, .F2, .F3, .F4, .F5, .F6, .F7, .F8, .F9 {
@@ -64,4 +71,260 @@ input[type="text"] {
   .form-container {
     align-self: flex-end;
   }
+}
+
+/*Skeleton Styles */
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+html {
+  font-size: 150%;
+}
+body {
+  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgb(241, 110, 110); 
+}
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300; }
+h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
+h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
+h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
+h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
+h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
+h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  h1 { font-size: 7.0rem; }
+  h2 { font-size: 5.2rem; }
+  h3 { font-size: 3.6rem; }
+  h4 { font-size: 3.0rem; }
+  h5 { font-size: 2.4rem; }
+  h6 { font-size: 1.5rem; }
+}
+
+p {
+  margin-top: 0; }
+
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+  color: #55e45c; }
+a:hover {
+  color: #0FA0CE; }
+
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0; }
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #33C3F0;
+  border-color: #33C3F0; }
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB; }
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #e44f4f;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px; }
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre; }
+
+
+
+/* Overriding default colors in Skeleton CSS framework */
+/* Colors from https://en.wikipedia.org/wiki/Tango_Desktop_Project#Palette */
+
+/* Body */
+
+body {
+    color: #000000;
+    background: #58c967;
+}
+a {
+    color: #993e4d;
+}
+a:hover {
+    color: #0c0c09;
+}
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    color: #1D1F20;
+    border: 1px solid #040505;
+    background-color: #bbe6db;
+}
+
+
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+    color: #2e3436;
+    background-color: #fcaf3e;
+    border-color: #fcaf3e;
+}
+
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+    color: #2e3436;
+    background-color: #f57900;
+    border-color: #f57900;
+}
+
+/* Layouts */
+html{
+	height: 100%;
+}
+
+body{
+	min-height: 100%;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url(https://blog-cdn.routeperfect.com/wp-content/uploads/2018/12/05144856/shutterstock_665388451-2.jpg)no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#mainContainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+	padding: 10px;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.7);
+}
+
+h1{
+	text-transform: uppercase
+}
+
+#container{
+	display: flex;
+	width: 90%;
+	max-width: 1000px;
+	flex-direction: row;
+	justify-content: center;
+	align-self: center;
+	height: 100%;
+	max-height: 900px;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+#leftSide, #rightSide{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	
+}
+
+#buttonSet{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 20px;
+}
+
+#buttonSet input{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#error-msg{
+  padding: 20px 30px;
+	font-size: 15px;
+  line-height: 20px;
+	color: LightSalmon
 }
